@@ -19,3 +19,7 @@ char Human::makeMove() {
 Human::Human(string x) {
   name = x;
 };
+
+Human::Human() {
+  name = "Human";
+}
