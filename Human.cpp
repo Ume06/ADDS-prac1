@@ -1,21 +1,21 @@
 // makeMove()
 // getName()
 #include <iostream>
-#include "Player.cpp"
 #include "Human.h"
 
 using namespace std;
 
-class Human : public Player{
-  public:
-    char makeMove() {
-      char x;
-      cout << "Enter move: ";
-      cin >> x;
-      return x;
-    }
+string Human::getName() {
+  return name;
+}
 
-    string getName() {
-      return "Human";
-    }
+char Human::makeMove() {
+  char x;
+  cout << "Enter move: ";
+  cin >> x;
+  return x;
+}
+
+Human::Human(string x) {
+  name = x;
 };

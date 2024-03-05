@@ -1,18 +1,14 @@
 // makeMove()
 // getName()
 #include <iostream>
-#include "Player.cpp"
 #include "Computer.h"
 
 using namespace std;
 
-class Human : public Player{
-  public:
-    char makeMove() {
-      return 'R';
-    }
+string Computer::getName() {
+  return "Computer";
+}
 
-    string getName() {
-      return "Computer";
-    }
-};
+char Computer::makeMove() {
+  return 'R';
+}

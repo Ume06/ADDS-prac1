@@ -1,10 +1,14 @@
+#ifndef COMPUTER_H // include guard
+#define COMPUTER_H
 #include <iostream>
 #include "Player.cpp"
 
 using namespace std;
 
-class Human : public Player{
+class Computer : public Player{
   public:
-    char makeMove() {}
-    string getName() {}
+    char makeMove();
+    string getName();
 };
+
+#endif
